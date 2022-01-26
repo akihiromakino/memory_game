@@ -1,0 +1,166 @@
+body {
+  font-size: 16px;
+  font-family: serif;
+}
+
+.header {
+  background-color: bisque;
+  height: 60px;
+  line-height: 60px;
+}
+
+.header h2 {
+  letter-spacing: 10px;
+  padding-left: 100px;
+}
+
+.main-top {
+  margin-top: 20px;
+}
+
+.main-top p {
+  padding-left: 100px;
+  letter-spacing: 10px;
+}
+
+#field {
+  width: 900px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.card {
+  width: 20px;
+  height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.card {
+  border: 2px solid gray;
+  width: 80px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 30px;
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+#clock {
+  letter-spacing: 10px;
+  padding-left: 100px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@keyframes endAnimation {
+  0% {
+    letter-spacing: 20px;
+    opacity: 0;
+  }
+}
+
+#end {
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 90px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 200px;
+  letter-spacing: 20px;
+  animation: endAnimation 4s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+
+  .header {
+    width: 100%;
+  }
+
+  .header  h2 {
+    font-size: 13px;
+    padding-left: 85px;
+  }
+
+  .main-top {
+    width: 100%;
+  }
+
+  .main-top p {
+    font-size: 13px;
+    padding-left: 35px;
+  }
+
+  #field {
+    width: 100%;
+  }
+
+  .card {
+    width: 50px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  #clock {
+    padding-left: 70px;
+  }
+
+  #end {
+    font-size: 20px;
+    letter-spacing: 0;
+    left: 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+  .header {
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .header h2 {
+    padding: 0;
+  }
+
+  .main-top p {
+    padding: 0;
+  }
+
+  #field {
+    width: 100%;
+  }
+
+  .card {
+    width: 40px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  #clock {
+    padding: 0;
+    font-size: 15px;
+    font-size: 20px;
+  }
+
+  #end {
+    top:50px;
+    font-size: 20px;
+    left: 40px;
+  }
+}
